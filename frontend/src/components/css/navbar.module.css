@@ -1,0 +1,11 @@
+.middle{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    gap: 3vw;
+}
+
+.logo{
+    margin-left: 1vw;
+    margin-right: 6vw;
+}

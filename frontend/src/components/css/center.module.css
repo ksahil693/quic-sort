@@ -1,0 +1,15 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop{
+    height: 5vh;
+    width: 20vw;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}

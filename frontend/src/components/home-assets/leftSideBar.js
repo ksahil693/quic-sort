@@ -3,7 +3,7 @@ import styles from "../css/left.module.css";
 
 function LeftSideBar() {
   return (
-    <div className="py-3 ps-2">
+    <div className="py-3 ps-4 mt-3">
       <div className={"rounded-3 py-3 ps-2 "+styles.main}>
       <h4>Filters</h4>
       <div class="form-check">

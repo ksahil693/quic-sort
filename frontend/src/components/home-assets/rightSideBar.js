@@ -3,7 +3,7 @@ import styles from "../css/right.module.css";
 
 function RightSideBar() {
   return (
-    <div className={styles.main}>
+    <div className={"px-3 " + styles.main}>
       <div className={"modal-content rounded-2 shadow px-2 py-2 " + styles.container}>
         <div className="modal-header p-2 pb-2 border-bottom-0 text-center ">
           <h5 className="fw-bold mb-0">Email me for jobs</h5>

@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./css/home.module.css";
 import LeftSideBar from "./home-assets/leftSideBar";
 import RightSideBar from "./home-assets/rightSideBar";
-import Jobitems from "./home-assets/jobitems";
+import HomeCenter from "./home-assets/homeCenter";
+
 const Home = () => {
   return (
     <div>
@@ -24,7 +25,7 @@ const Home = () => {
           <LeftSideBar />
         </div>
         <div className={styles.c2}>
-          <Jobitems />
+          <HomeCenter />
         </div>
         <div className={styles.c3}>
           <RightSideBar />

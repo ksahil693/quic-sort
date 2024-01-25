@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "./images/Logo.jpg";
 import styles from "./css/navbar.module.css"
 const Navbar = () => {
@@ -6,9 +7,9 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className={"navbar-brand " + styles.logo}href="/">
+          <Link className={"navbar-brand " + styles.logo} to="/">
             <img src={logo} style={{ height: "7vh" }} alt="logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,30 +21,30 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className={"collapse navbar-collapse " + styles.nav} id="navbarSupportedContent">
             <ul className={'navbar-nav me-auto mb-6 mb-lg-0 styles.middle ' + styles.middle}>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/discover">
                   Discover
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/wishlist">
                   Wishlist
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  tools
-                </a>
+                <Link className="nav-link active" aria-current="page" to="/tools">
+                  Tools
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/creators">
                   Creators
-                </a>
+                </Link>
               </li>
             </ul>
-            <div className="d-flex" role="search">
+            <div className="d-flex mt-2" role="search">
               <button className="btn btn-outline-dark me-3" type="submit">
                 Log in
               </button>

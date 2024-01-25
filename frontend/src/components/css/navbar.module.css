@@ -9,3 +9,12 @@
     margin-left: 1vw;
     margin-right: 6vw;
 }
+
+@media (max-width: 768px) {
+    .nav{
+        margin-left: 2vw;
+    }
+    .middle{
+        margin-bottom: 2vw;
+    }
+}

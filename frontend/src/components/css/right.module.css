@@ -5,6 +5,10 @@
     max-height: fit-content;
     background-color: white;
 }
+.cont {
+    position: sticky;
+    top: 1vh;
+}
 .main{
     /* background-color: rgb(194, 192, 192); */
     min-height: 100vh;

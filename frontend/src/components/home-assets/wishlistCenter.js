@@ -1,19 +1,21 @@
 import React from "react";
 import styles from "../css/center.module.css";
-import JobItems from "./jobItems";
+import WishlistItems from "./wishlistItems";
+import Filters from "./filter";
 
-function HomeCenter() {
-
+function WishlistCenter() {
   const symbol1 = "<";
   const symbol2 = ">";
   const jobs = [];
-  for(let i=0;i<10;i++){
-    jobs.push(<JobItems/>);
+  for (let i = 0; i < 3; i++) {
+    jobs.push(<WishlistItems />);
   }
   return (
     <div className="px-3 py-3 mt-3">
       <div className={"mb-3 " + styles.top}>
-        <h3>3177 Jobs</h3>
+        <h3 className={styles.heading}>3177 Jobs</h3>
+        <Filters />
+
         <select
           className={"form-select " + styles.drop}
           aria-label="Default select example"
@@ -25,15 +27,18 @@ function HomeCenter() {
         </select>
       </div>
       <div className={" " + styles.items}>
-        <JobItems />
-        <JobItems />
+        <WishlistItems />
+        <WishlistItems />
         {jobs}
       </div>
       <div className="mt-3">
         <nav aria-label="Page navigation example">
           <ul class="pagination justify-content-center">
             <li class="page-item disabled me-3">
-              <a class="page-link" href="/"> {symbol1} </a>
+              <a class="page-link" href="/">
+                {" "}
+                {symbol1}{" "}
+              </a>
             </li>
             <li class="page-item me-3">
               <a class="page-link" href="/">
@@ -72,4 +77,4 @@ function HomeCenter() {
   );
 }
 
-export default HomeCenter;
+export default WishlistCenter;

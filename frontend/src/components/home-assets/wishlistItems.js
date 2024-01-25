@@ -12,7 +12,7 @@ import person from "../images/user.jpg"
 import Linkedin from "../images/linkedin.jpg"
 import elipse from "../images/Ellipse.jpg"
 
-function JobItems() {
+function WishlistItems() {
   return (
     <div className={styles.main}>
       <div className="col">
@@ -22,14 +22,21 @@ function JobItems() {
               <li className="me-auto">
                 <p className="fs-4">Liner Company</p>
               </li>
-              <li class={"d-flex align-items-center me " + styles.item}>
-              <span className="me-2 mb-1"><img src={folder} alt="folder"/></span>Archive
+              <li class={"d-flex align-items-center "}>
+              <button className={styles.item}>
+              <span className={`me-2 mb-1 `}><img src={folder} alt="folder"/></span>Archive
+              </button>
               </li>
-              <li class={"d-flex align-items-center me " + styles.item}>
-              <span className="me-2 mb-1"><img src={checkCircle} alt="check"/></span>Mark as done
+              <li class={"d-flex align-items-center "}>
+              <button className={styles.item}>
+              <span className={`me-2 mb-1 `}><img src={checkCircle} alt="check"/></span>Mark as done
+              </button>
               </li>
-              <li class={"d-flex align-items-center me " + styles.item}>
-              <span className="me-2 mb-1"><img src={send} alt="send"/></span>Apply
+              <li class={`d-flex align-items-center`}>
+              <button className={styles.item2}>
+              <span className="me-2 mb-1"><img className={styles.responseImg} src={send} alt="send"/></span>Apply
+
+              </button>
               </li>
             </ul>
 
@@ -94,4 +101,4 @@ function JobItems() {
   );
 }
 
-export default JobItems;
+export default WishlistItems;

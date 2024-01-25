@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "./css/home.module.css";
+import styles from "./css/wishlist.module.css";
 import LeftSideBar from "./home-assets/leftSideBar";
 import RightSideBar from "./home-assets/rightSideBar";
-import HomeCenter from "./home-assets/homeCenter";
+import WishlistCenter from "./home-assets/wishlistCenter";
 
-const Home = () => {
+const Wishlist = () => {
   return (
     <div>
-      <div class={"px-4 py-5 my-5 "}>
+      <div class={"px-4 py-5 my-5 " + styles.top}>
         <div class="col-lg-6 mx-4">
           <p className={styles.heading}>
             Find your <span className={styles.center}>new job</span> today
@@ -20,12 +20,12 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className={"px-2 py-4 " + styles.main}>
+      <div className={"px-2 py-4 fixed-start " + styles.main}>
         <div className={styles.c1}>
           <LeftSideBar />
         </div>
         <div className={styles.c2}>
-          <HomeCenter />
+          <WishlistCenter />
         </div>
         <div className={styles.c3}>
           <RightSideBar />
@@ -35,4 +35,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Wishlist;

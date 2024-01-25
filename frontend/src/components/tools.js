@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Login() {
+function Tools() {
   return (
     <div style={{"height":"60vh"}}>
       
@@ -9,4 +9,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Tools

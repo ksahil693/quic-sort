@@ -1,8 +1,26 @@
-.item{
+.item , .item2{
     background-color: #F8F3FC;
     padding: 1vh 3vh 1vh 3vh;
     height: fit-content;
     width: fit-content;
     border-radius: 4vh 4vh 4vh 4vh;
-    margin-left: 2vw;
+    margin-left: 2vw;    
+    border: none;
+}
+.item:hover{
+    background-color: #eedcfd;
+}
+
+.item2:hover{
+    background-color: #eedcfd;
+}
+
+@media (max-width: 768px) {
+    /* Apply styles for screens wider than 768px */
+    .responseImg{
+        display: none;
+    }
+    .item{
+        display: none;
+    }
 }

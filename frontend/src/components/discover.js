@@ -6,7 +6,7 @@ function Discover() {
   const symbol1 = "<";
   const symbol2 = ">";
 
-  return (
+  return ( 
     <div className={styles.main}>
 
     <div className="container py-5 ">

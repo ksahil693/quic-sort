@@ -9,6 +9,7 @@ import Login from "./components/login";
 import SignUp from "./components/signUp";
 import Creators from "./components/creators";
 import LandingPage from "./components/landingPage";
+import Profile from "./components/profile";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/creators" element={<Creators />}></Route>
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/register" element={<SignUp />}></Route>
+          <Route exact path="/profile" element={<Profile />}></Route>
         </Routes>
         <Footer />
       </div>

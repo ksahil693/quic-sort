@@ -1,6 +1,10 @@
 .main {
     background-color: white;
     max-height: fit-content;
+    background-color: #F8F3FC;
+}
+.top{
+    background-color: #F8F3FC;
 }
 
 .results {
@@ -14,7 +18,7 @@
     border: none;
     background-color: white;
 
-}
+} 
 
 .btn:hover {
     background-color: rgb(231, 230, 230);
@@ -51,4 +55,21 @@
     .icon{
         padding-top: 2px;
     }
+}
+.off{
+    overflow: scroll;
+}
+.btn{
+    background-color: #EC7F6A;
+    font-weight: 600;
+    color: white;
+}
+.btn:hover{
+    background-color: #fe5b3a;
+}
+.btn2{
+    border: 1px solid #fe5b3a;
+    background-color: white;
+    color: #fe5b3a;
+    font-weight: 700;
 }
